@@ -1,0 +1,21 @@
+{
+    "DocumentClassifierArn":"arn:aws:comprehend:ap-southeast-2:XXXXXXXX:document-classifier/XXXXXXX",
+    "InputDataConfig":{
+        "InputFormat": "ONE_DOC_PER_FILE",
+        "S3Uri": "s3://<S3 INPUT BUCKET>/<S3 Key>",
+        "DocumentReaderConfig": {
+            "DocumentReadAction": "TEXTRACT_ANALYZE_DOCUMENT",
+            "FeatureTypes": ["FORMS"]
+        }
+    },
+    "OutputDataConfig":{
+        "S3Uri": "s3://<S3 OUTPUT BUCKET>/<S3 Key>"
+    },
+    "DataAccessRoleArn":"arn:aws:iam::XXXXXX:role/ComprehendJobPollingStack-ComprehendDataAccessRole-XXXXXXX",
+    "Tags":[
+        {
+            "Key": "key",
+            "Value": "value"
+        }
+    ]
+}
