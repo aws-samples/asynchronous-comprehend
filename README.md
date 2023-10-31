@@ -1,8 +1,8 @@
 
 # Asynchronous Comprehend
+This is a CDK project that demonstrates two options to to use Comprehend's Job based SDKs with AWS events.
 
-This is a CDK project that stands the following solution to demonstrate how to use Comprehend's Job based SDKs with AWS events.
-
+## Polling
 <p align="center">
   <img src="./polling.drawio.png" />
 </p>
@@ -10,13 +10,15 @@ This is a CDK project that stands the following solution to demonstrate how to u
 In order to log events, the logger stack also deploys this.
 <img src="./logger.drawio.png" />
 
+## S3 Events
+<p align="center">
+  <img src="./s3.drawio.png" />
+</p>
 
 ## Useful commands
  * `cdk synth`       emits the synthesized CloudFormation template
  * `cdk deploy`      deploy this stack to your default AWS account/region
  * `cdk destroy`     destroy this stack and remove resources from your AWS account
-
-
 
 ## License
 
